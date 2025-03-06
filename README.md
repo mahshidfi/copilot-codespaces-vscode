@@ -1,5 +1,25 @@
 <header>
+#include <iostream>
+using namespace std;
 
+int main() {
+    double numbers[] = {5, 10, 400, 6, 20000};
+    double maxNum = numbers[0];
+    double minNum = numbers[0];
+
+    for (int i = 1; i < 5; ++i) {
+        if (numbers[i] > maxNum) {
+            maxNum = numbers[i];
+        }
+        if (numbers[i] < minNum) {
+            minNum = numbers[i];
+        }
+    }
+
+    cout << "Maximum number is: " << maxNum << endl;
+    cout << "Minimum number is: " << minNum << endl;
+
+    return 0;
 <!--
   <<< Author notes: Course header >>>
   Read <https://skills.github.com/quickstart> for more information about how to build courses using this template.
